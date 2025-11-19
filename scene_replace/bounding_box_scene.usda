@@ -1,0 +1,161 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Cube "bbox_dining_chair_1"
+    {
+        float xformOp:rotateZ = 89.99979
+        float3 xformOp:scale = (0.234375, 0.28125, 0.40625)
+        double3 xformOp:translate = (-1.055851936340332, 2.173864761988322, -0.8503475274358476)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_dining_chair_2"
+    {
+        float xformOp:rotateZ = 89.99979
+        float3 xformOp:scale = (0.234375, 0.28125, 0.40625)
+        double3 xformOp:translate = (-1.055851936340332, 2.673864761988322, -0.8503475274358476)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_dining_chair_3"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (0.234375, 0.28125, 0.40625)
+        double3 xformOp:translate = (-0.20585155487060547, 2.673864761988322, -0.8503475274358476)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_dining_chair_4"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (0.234375, 0.28125, 0.40625)
+        double3 xformOp:translate = (-0.20585155487060547, 2.173864761988322, -0.8503475274358476)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_stool_5"
+    {
+        float xformOp:rotateZ = -126.0003
+        float3 xformOp:scale = (0.375, 0.40625, 0.328125)
+        double3 xformOp:translate = (-3.4558515548706055, 0.8238648573557534, -0.9503475512777055)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_dining_table_6"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (0.8125, 0.40625, 0.34375)
+        double3 xformOp:translate = (-0.555851936340332, 2.3738650480906167, -0.9003475393567766)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_coffee_table_7"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (0.53125, 0.34375, 0.203125)
+        double3 xformOp:translate = (-3.805851936340332, 2.5238651434580484, -1.050347545317241)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_tv_9"
+    {
+        float xformOp:rotateZ = 89.99979
+        float3 xformOp:scale = (0.734375, 0, 0.421875)
+        double3 xformOp:translate = (-5.105851650238037, 2.2738651434580484, -0.15034753935677658)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_tv_cabinet_10"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (1.4375, 0.171875, 0.1875)
+        double3 xformOp:translate = (-4.955851793289185, 2.2738651434580484, -1.050347545317241)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_wine_cabinet_11"
+    {
+        float xformOp:rotateZ = -180.00043
+        float3 xformOp:scale = (0.96875, 0.171875, 1.09375)
+        double3 xformOp:translate = (-0.9558515548706055, -0.12613507111867284, -0.15034753935677658)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_painting_18"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (0.453125, 0.015625, 0.5625)
+        double3 xformOp:translate = (1.0441484451293945, 2.673864761988322, 0.29965250832693924)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_curtain_19"
+    {
+        float xformOp:rotateZ = -180.00043
+        float3 xformOp:scale = (0.375, 0.078125, 1.28125)
+        double3 xformOp:translate = (-4.555851697921753, 3.723864952723185, 0.04965250832693924)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_curtain_20"
+    {
+        float xformOp:rotateZ = -180.00043
+        float3 xformOp:scale = (0.375, 0.078125, 1.28125)
+        double3 xformOp:translate = (0.944148063659668, 3.6238650480906167, 0.04965250832693924)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_carpet_21"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (1.4375, 0.96875, 0)
+        double3 xformOp:translate = (-3.605851650238037, 2.3738650480906167, -1.250347533396312)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_plants_22"
+    {
+        float xformOp:rotateZ = -180.00043
+        float3 xformOp:scale = (0.265625, 0.265625, 0.484375)
+        double3 xformOp:translate = (-0.25585174560546875, 3.5238651434580484, -0.7503475631986345)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_plants_23"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (0.34375, 0.265625, 0.671875)
+        double3 xformOp:translate = (-4.955851793289185, 1.0738648573557534, -0.6003475274358476)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_sofa_27"
+    {
+        float xformOp:rotateZ = -90.00021
+        float3 xformOp:scale = (1.2125, 0.50625, 0.34375)
+        double3 xformOp:translate = (-2.255851936340332, 2.2738650480906166, -0.9003475393567766)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_window_28"
+    {
+        float xformOp:rotateZ = -180.00043
+        float3 xformOp:scale = (2, 0.28125, 1.48125)
+        double3 xformOp:translate = (0.044148063659668, 3.9238650480906165, 0.04965250832693924)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+
+    def Cube "bbox_window_29"
+    {
+        float xformOp:rotateZ = -180.00043
+        float3 xformOp:scale = (2, 0.28125, 1.48125)
+        double3 xformOp:translate = (-3.605851650238037, 3.9238650480906165, 0.04965250832693924)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+    }
+}
+

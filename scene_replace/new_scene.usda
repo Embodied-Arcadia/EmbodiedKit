@@ -1,0 +1,263 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Xform "bbox_dining_chair_1" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.7071081, 0, 0, 0.70710546)
+        float xformOp:rotateZ = -180
+        float3 xformOp:scale = (0.008215181, 0.008215181, 0.008215181)
+        double3 xformOp:translate = (-1.250429320721767, 2.173864761988322, 0.3425980891511138)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_dining_chair_2" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.7071081, 0, 0, 0.70710546)
+        float xformOp:rotateZ = -180
+        float3 xformOp:scale = (0.008215181, 0.008215181, 0.008215181)
+        double3 xformOp:translate = (-1.15314062853105, 2.673864761988322, 0.3425980891511138)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_dining_chair_3" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float xformOp:rotateZ = -180
+        float3 xformOp:scale = (0.008215181, 0.008215181, 0.008215181)
+        double3 xformOp:translate = (0.041436774146748234, 2.673864761988322, 0.3425980891511151)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_dining_chair_4" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float xformOp:rotateZ = -180
+        float3 xformOp:scale = (0.008215181, 0.008215181, 0.008215181)
+        double3 xformOp:translate = (0.04143677414674829, 2.173864761988322, 0.3425980891511151)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_stool_5" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/stool/e0531cc13222b6d01e530f2854700c44/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.4539882, 0, 0, 0.8910077)
+        float3 xformOp:scale = (0.00995673, 0.00995673, 0.00995673)
+        double3 xformOp:translate = (-3.4558515548706055, 0.8238648573557534, 0.32812501448159703)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_dining_table_6" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/table/11944338718095ef0c1bd920b6a9050f/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float xformOp:rotateZ = 90
+        float3 xformOp:scale = (0.009040604, 0.009040604, 0.009040604)
+        double3 xformOp:translate = (-0.555851936340332, 2.3738650480906167, 0.34374999850001586)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_coffee_table_7" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/teatable/569b082e4f84232d5f2635c9cbaa6909/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float3 xformOp:scale = (0.0060531073, 0.0060531073, 0.0060531073)
+        double3 xformOp:translate = (-3.805851936340332, 2.5238651434580484, 0.20312499517027094)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_tv_cabinet_10" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/tv_stand/fa2cf352d8e81e6ca07848d6a02b194d/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float xformOp:rotateZ = 90
+        float3 xformOp:scale = (0.008223683, 0.008223683, 0.008223683)
+        double3 xformOp:translate = (-4.955851793289185, 2.2738651434580484, 0.17763154506683354)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_wine_cabinet_11" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/cabinet/822003754245d1f76fafcfbf689dea0b/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.0000037284256, 0, 0, 1)
+        float3 xformOp:scale = (0.008750001, 0.008750001, 0.008750001)
+        double3 xformOp:translate = (-0.9558515548706055, -0.12613507111867284, 1.0937500510719267)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_painting_18" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/decoration/cd3613c2c383a7069e7c114bfc8be169/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float xformOp:rotateZ = 90
+        float3 xformOp:scale = (0.006071516, 0.006071516, 0.006071516)
+        double3 xformOp:translate = (1.0441484451293945, 2.673864761988322, 0.3035914718628)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_curtain_19" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/curtain/0335136e95d9d6b526150e67e060f98b/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.0000037284256, 0, 0, 1)
+        float3 xformOp:scale = (0.0083415145, 0.0083415145, 0.0083415145)
+        double3 xformOp:translate = (-4.555851697921753, 3.4591678228705556, 1.1674847777827806)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_curtain_20" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/curtain/0335136e95d9d6b526150e67e060f98b/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.0000037284256, 0, 0, 1)
+        float3 xformOp:scale = (0.0083415145, 0.0083415145, 0.0083415145)
+        double3 xformOp:translate = (0.944148063659668, 3.541516435480586, 1.1674847777827806)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_plants_22" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/plant/1f46c34491783aa7a4dddc88437300ff/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.0000037284256, 0, 0, 1)
+        float3 xformOp:scale = (0.008859778, 0.008859778, 0.008859778)
+        double3 xformOp:translate = (-0.25585174560546875, 3.398182808922554, 0.3209365832115054)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_plants_23" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/plant/1f46c34491783aa7a4dddc88437300ff/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float3 xformOp:scale = (0.010071433, 0.010071433, 0.010071433)
+        double3 xformOp:translate = (-4.955851793289185, 1.0738648573557534, 0.3648275845640683)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_sofa_27" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/object/others/sofachair/9649fd9792494906b151e303296a58c7/instance.usd@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (-0.70710546, 0, 0, 0.7071081)
+        float xformOp:rotateZ = 90
+        float3 xformOp:scale = (0.009447042, 0.009447042, 0.009447042)
+        double3 xformOp:translate = (-2.255851936340332, 2.2738650480906166, 0.2880610882239576)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_window_28" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/layout/articulated/window/e9941d1e33dfc9f3a5bb916b6a48bebf/instance.usda@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.0000037284256, 0, 0, 1)
+        float3 xformOp:scale = (0.007075472, 0.007075472, 0.007075472)
+        double3 xformOp:translate = (0.044148063659668, 4.2142446078461715, 0.7331346262491732)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "bbox_window_29" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        prepend references = @/home/xianzi/code/InternUtopia/internutopia/assets/scenes/GRScenes-100/home_scenes/./models/layout/articulated/window/e9941d1e33dfc9f3a5bb916b6a48bebf/instance.usda@
+    )
+    {
+        float physics:mass = 10
+        bool physics:rigidBodyEnabled = 0
+        quatf xformOp:orient = (0.0000037284256, 0, 0, 1)
+        float3 xformOp:scale = (0.007075472, 0.007075472, 0.007075472)
+        double3 xformOp:translate = (-3.605851650238037, 4.188562177943246, 0.7331346262491732)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "ground"
+    {
+        def Mesh "mesh" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            int[] faceVertexCounts = [4]
+            int[] faceVertexIndices = [0, 1, 2, 3]
+            normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)] (
+                interpolation = "vertex"
+            )
+            uniform token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 1
+            bool physics:rigidBodyEnabled = 0
+            point3f[] points = [(-5, -5, -0.0001), (-5, 5, -0.0001), (5, 5, -0.0001), (5, -5, -0.0001)]
+        }
+    }
+}
+
+def PhysicsScene "physicsScene"
+{
+    vector3f physics:gravityDirection = (0, 0, -1)
+    float physics:gravityMagnitude = 9.81
+}
+

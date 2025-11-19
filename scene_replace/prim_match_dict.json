@@ -1,0 +1,45 @@
+{
+    "chair": {
+        "/World/bbox_dining_chair_1": "./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd",
+        "/World/bbox_dining_chair_2": "./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd",
+        "/World/bbox_dining_chair_3": "./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd",
+        "/World/bbox_dining_chair_4": "./models/object/others/chair/fa34300a3b5ade1493bace94c7b5ffba/instance.usd"
+    },
+    "stool": {
+        "/World/bbox_stool_5": "./models/object/others/stool/e0531cc13222b6d01e530f2854700c44/instance.usd"
+    },
+    "table": {
+        "/World/bbox_dining_table_6": "./models/object/others/table/11944338718095ef0c1bd920b6a9050f/instance.usd"
+    },
+    "teatable": {
+        "/World/bbox_coffee_table_7": "./models/object/others/teatable/569b082e4f84232d5f2635c9cbaa6909/instance.usd"
+    },
+    "tv": {
+        "/World/bbox_tv_9": "./models/object/others/tv/558c35bc89347e841f837606ac0a56f9/instance.usd"
+    },
+    "tv_stand": {
+        "/World/bbox_tv_cabinet_10": "./models/object/others/tv_stand/fa2cf352d8e81e6ca07848d6a02b194d/instance.usd"
+    },
+    "cabinet": {
+        "/World/bbox_wine_cabinet_11": "./models/object/others/cabinet/822003754245d1f76fafcfbf689dea0b/instance.usd"
+    },
+    "decoration": {
+        "/World/bbox_painting_18": "./models/object/others/decoration/cd3613c2c383a7069e7c114bfc8be169/instance.usd"
+    },
+    "curtain": {
+        "/World/bbox_curtain_19": "./models/object/others/curtain/0335136e95d9d6b526150e67e060f98b/instance.usd",
+        "/World/bbox_curtain_20": "./models/object/others/curtain/0335136e95d9d6b526150e67e060f98b/instance.usd",
+        "/World/bbox_carpet_21": "./models/object/others/curtain/0335136e95d9d6b526150e67e060f98b/instance.usd"
+    },
+    "plant": {
+        "/World/bbox_plants_22": "./models/object/others/plant/1f46c34491783aa7a4dddc88437300ff/instance.usd",
+        "/World/bbox_plants_23": "./models/object/others/plant/1f46c34491783aa7a4dddc88437300ff/instance.usd"
+    },
+    "sofachair": {
+        "/World/bbox_sofa_27": "./models/object/others/sofachair/9649fd9792494906b151e303296a58c7/instance.usd"
+    },
+    "window": {
+        "/World/bbox_window_28": "./models/layout/articulated/window/e9941d1e33dfc9f3a5bb916b6a48bebf/instance.usda",
+        "/World/bbox_window_29": "./models/layout/articulated/window/e9941d1e33dfc9f3a5bb916b6a48bebf/instance.usda"
+    }
+}

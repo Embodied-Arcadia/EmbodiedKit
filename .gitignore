@@ -3,7 +3,7 @@
 temp/
 
 # Python
-__pycache__/
+**/__pycache__/
 
 # Node.js
 node_modules/
