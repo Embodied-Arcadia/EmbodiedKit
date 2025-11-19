@@ -1,0 +1,19 @@
+tensorflow==2.15.0
+tensorflow_datasets==4.9.3
+tensorflow_graphics==2021.12.3
+dlimp @ git+https://github.com/moojink/dlimp_openvla
+transformers==4.50.0
+qwen_vl_utils
+accelerate==1.5.2
+wandb
+flash-attn==2.6.1
+scipy
+pillow
+safetensors
+numpy==1.26.4
+imageio[ffmpeg]
+robosuite==1.4.1
+bddl
+easydict
+cloudpickle
+gym
