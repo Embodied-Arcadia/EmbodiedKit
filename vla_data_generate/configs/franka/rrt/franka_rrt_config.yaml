@@ -1,0 +1,123 @@
+# Copyright (c) 2019-2023, NVIDIA CORPORATION.  All rights reserved.
+#
+# NVIDIA CORPORATION and its licensors retain all intellectual property
+# and proprietary rights in and to this software, related documentation
+# and any modifications thereto.  Any use, reproduction, disclosure or
+# distribution of this software and related documentation without an express
+# license agreement from NVIDIA CORPORATION is strictly prohibited.
+
+# Lula RRT Configuration for Franka Panda Robot
+# Based on official Isaac Sim documentation and examples
+
+# Random seed for reproducible path planning
+seed: 123456
+
+# Step size for tree extension
+# Smaller values provide finer resolution but slower planning
+step_size: 0.05
+
+# Maximum number of RRT iterations before failure
+max_iterations: 50000
+
+# Maximum number of samples to attempt
+max_sampling: 10000
+
+# Weights for distance metric in configuration space (7-DOF for Franka)
+# Higher weights make certain joints more important in distance calculations
+# Order: [joint1, joint2, joint3, joint4, joint5, joint6, joint7]
+distance_metric_weights: [3.0, 2.0, 2.0, 1.5, 1.5, 1.0, 1.0]
+
+# Task space frame name (end effector)
+# Options: "panda_rightfingertip", "panda_leftfingertip", "panda_hand", "right_gripper"
+task_space_frame_name: "panda_hand"
+
+# Task space sampling limits [min, max] for [x, y, z]
+# Defines bounding box for task space exploration (in meters)
+task_space_limits: [[0.0, 0.7], [-0.6, 0.6], [0.0, 0.8]]
+
+# CUDA tree parameters for GPU-accelerated RRT
+cuda_tree_params:
+    # Maximum number of nodes in the RRT tree
+    max_num_nodes: 10000
+    
+    # Maximum buffer size for GPU operations
+    max_buffer_size: 30
+    
+    # Threshold for switching between CPU and GPU processing
+    num_nodes_cpu_gpu_crossover: 3000
+
+# Configuration space (C-space) planning parameters
+c_space_planning_params:
+    # Fraction of iterations using exploration vs exploitation
+    # Higher values (closer to 1.0) favor exploration
+    # Range: [0.0, 1.0], recommended: [0.5, 1.0)
+    exploration_fraction: 0.5
+
+# Task space planning parameters
+task_space_planning_params:
+    # Target zone tolerance for translation (meters)
+    # Defines "close enough" zone for initial path finding
+    translation_target_zone_tolerance: 0.05
+    
+    # Target zone tolerance for orientation (radians)
+    # Defines "close enough" zone for initial path finding
+    orientation_target_zone_tolerance: 0.09
+    
+    # Final tolerance for translation after IK solving (meters)
+    # Final precision required at target
+    translation_target_final_tolerance: 1e-4
+    
+    # Final tolerance for orientation after IK solving (radians)
+    # Final precision required at target
+    orientation_target_final_tolerance: 0.005
+    
+    # Weight for translation gradient in Jacobian Transpose method
+    # Recommended starting value: 1.0
+    translation_gradient_weight: 1.0
+    
+    # Weight for orientation gradient in Jacobian Transpose method
+    # Recommended starting value: 0.125
+    orientation_gradient_weight: 0.125
+    
+    # Weight for translation distance in nearest neighbor search
+    # Recommended starting value: 1.0
+    nn_translation_distance_weight: 1.0
+    
+    # Weight for orientation distance in nearest neighbor search
+    # Recommended starting value: 0.125
+    nn_orientation_distance_weight: 0.125
+    
+    # Fraction of iterations for task space exploitation (moving toward target)
+    # Must be in [0, 1], sum with exploration_fraction <= 1
+    # Recommended starting value: 0.4
+    task_space_exploitation_fraction: 0.4
+    
+    # Fraction of iterations for task space exploration (random sampling)
+    # Must be in [0, 1], sum with exploitation_fraction <= 1
+    # Recommended starting value: 0.1
+    # Remaining fraction is c-space exploration: 1 - (0.4 + 0.1) = 0.5
+    task_space_exploration_fraction: 0.1
+    
+    # Maximum gradient descent substeps when far from target
+    # Recommended starting value: 6
+    max_extension_substeps_away_from_target: 6
+    
+    # Maximum gradient descent substeps when near target
+    # Recommended starting value: 50
+    max_extension_substeps_near_target: 50
+    
+    # Scale factor to determine "near target" region
+    # Region size = factor * target_zone_tolerance
+    # Must be >= 1.0
+    # Recommended starting value: 2.0
+    extension_substep_target_region_scale_factor: 2.0
+    
+    # Scalar for culling unexploited nodes
+    # Higher values keep more nodes
+    # Recommended starting value: 1.0
+    unexploited_nodes_culling_scalar: 1.0
+    
+    # Step size for gradient descent substeps
+    # Recommended starting value: 0.025
+    gradient_substep_size: 0.025
+

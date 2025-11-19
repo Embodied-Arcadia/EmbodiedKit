@@ -1,0 +1,83 @@
+{
+  "dataset_name": "vla_franka_manipulation",
+  "dataset_description": "VLA robot manipulation dataset with Franka arm using RRT path planning",
+  "output_dir": "./vla_output",
+  "num_episodes": 10,
+  "shard_size": 100,
+  
+  "robot_description_path": "./configs/franka/rmpflow/robot_descriptor.yaml",
+  "urdf_path": "./configs/franka/lula_franka_gen.urdf",
+  "rrt_config_path": "./configs/franka/rrt/franka_rrt_config.yaml",
+  "robot_asset_path": null,
+  "robot_start_position": [0.0, 0.0, 0.0],
+  
+  "scene_usd_path": null,
+  
+  "objects": [
+    {
+      "name": "red_cube",
+      "type": "cuboid",
+      "position": [0.5, 0.0, 0.05],
+      "size": [0.05, 0.05, 0.05],
+      "color": [1.0, 0.0, 0.0]
+    },
+    {
+      "name": "green_cube",
+      "type": "cuboid",
+      "position": [0.4, 0.2, 0.05],
+      "size": [0.05, 0.05, 0.05],
+      "color": [0.0, 1.0, 0.0]
+    },
+    {
+      "name": "blue_sphere",
+      "type": "sphere",
+      "position": [0.3, -0.2, 0.025],
+      "radius": 0.025,
+      "color": [0.0, 0.0, 1.0]
+    }
+  ],
+  
+  "tasks": [
+    {
+      "instruction": "拿起红色方块放到另一处",
+      "target_object": "red_cube",
+      "target_position": [0.3, 0.3, 0.05]
+    },
+    {
+      "instruction": "Pick up the green cube and place it on the left",
+      "target_object": "green_cube",
+      "target_position": [-0.2, 0.3, 0.05]
+    },
+    {
+      "instruction": "Move the blue sphere to the center",
+      "target_object": "blue_sphere",
+      "target_position": [0.0, 0.0, 0.025]
+    },
+    {
+      "instruction": "拿起红色方块放到绿色方块旁边",
+      "target_object": "red_cube",
+      "target_position": [0.35, 0.2, 0.05]
+    },
+    {
+      "instruction": "Place the green cube near the blue sphere",
+      "target_object": "green_cube",
+      "target_position": [0.25, -0.2, 0.05]
+    }
+  ],
+  
+  "camera": {
+    "position": [0.0, 0.0, 2.5],
+    "orientation": [1.0, 0.0, 0.0, 0.0],
+    "resolution": [640, 480]
+  },
+  
+  "data_collection": {
+    "interpolate_path": true,
+    "interpolation_steps": 10,
+    "use_time_optimal_trajectory": true,
+    "description": "use_time_optimal_trajectory: 使用Lula时间最优轨迹生成器（推荐）; interpolation_steps: 仅在use_time_optimal=false时使用，每两个RRT waypoint之间插值的步数"
+  },
+  
+  "physics_dt": 0.01666667
+}
+

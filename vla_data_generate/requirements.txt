@@ -1,0 +1,27 @@
+# VLA训练数据生成器依赖
+
+# 核心依赖
+numpy>=1.19.0
+scipy>=1.5.0
+
+# 深度学习和数据集
+tensorflow>=2.8.0
+tensorflow-datasets>=4.5.0
+
+# 图像处理
+Pillow>=8.0.0
+
+# 配置文件处理
+pyyaml>=5.4.0
+
+# 可选：数据可视化
+matplotlib>=3.3.0
+opencv-python>=4.5.0
+
+# 注意：
+# 以下依赖由Isaac Sim提供，通常不需要单独安装：
+# - isaacsim
+# - omni.isaac.core
+# - omni.isaac.motion_generation
+# - omni.isaac.franka
+
